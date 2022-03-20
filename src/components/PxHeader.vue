@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"> <Image style="width: 2em" alt="Logo Electronics" img="https://cdn-icons-png.flaticon.com/512/4213/4213636.png"></Image></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,6 @@
           <li class="nav-item">
             <router-link v-bind:to="toLink_3" class="nav-link active fst-italic">{{s_option}}</router-link>
           </li>
-
         </ul>
       </div>
     </div>
@@ -36,11 +35,12 @@ export default {
     toLink: String,
     toLink_2: String,
     toLink_3: String,
-    s_option: String
+    s_option: String,
+    emoji:String
   },
   data() {
     return {
-
+      dark_mode : false
     }
   }
 }
