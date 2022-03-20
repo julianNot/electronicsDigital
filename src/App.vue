@@ -1,9 +1,12 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+
+  <PxHeader title="Electronics Digitals" toLink="/about" to-link_2="/" to-link_3="/showinvoice" f_option="Crear Factura" s_option="Ver Factura"></PxHeader>
+  <div id="nav" class="bg-blue-400">
+    <router-link to="/">Inicio</router-link> |
+    <router-link to="/about" >Que perra</router-link> |
+    <router-link to="/showinvoice" >Ver factura</router-link>
   </div>
-  <router-view/>
+ <router-view/>
 </template>
 
 <style>
@@ -28,3 +31,10 @@
   color: #42b983;
 }
 </style>
+<script>
+import PxHeader from "@/components/PxHeader";
+export default {
+  components: {PxHeader}
+}
+</script>
+
