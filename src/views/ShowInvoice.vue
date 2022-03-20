@@ -1,10 +1,13 @@
 <template>
-<h1>Esto esta potente 🥲</h1>
+<h1>Estamos Trabajando muy duro 🥵</h1>
 </template>
 
 <script>
 export default {
-  name: "About"
+  name: "ShowInvoice",
+  props: {
+
+  }
 }
 </script>
 
