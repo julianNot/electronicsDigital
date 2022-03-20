@@ -30,14 +30,6 @@ export default {
 
 <style>
 
-label {
-  display: inline-block;
-  width: 90px;
-  margin: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 .card{
     padding: 10px;
 }

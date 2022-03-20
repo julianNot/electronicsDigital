@@ -1,7 +1,8 @@
 <template>
-  <section>
-      <section>
-          <InputC typeInput="password" idInput="pauwu"/>
+  <section class="card">
+      <section class="d-flex">
+          <label for="i-nameC">Nombre Empresa</label>
+          <InputC typeInput="text" idInput="i-nameC"/>
       </section>
       <section></section>
   </section>

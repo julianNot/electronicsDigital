@@ -34,4 +34,12 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
 }
+
+label {
+  display: inline-block;
+  width: 90px;
+  margin: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
 </style>
