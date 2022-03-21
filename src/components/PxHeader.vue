@@ -8,17 +8,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link v-bind:to="toLink_2" class="nav-link active fst-italic" aria-current="page" href="#">{{ title }}</router-link>
+            <router-link v-bind:to="toLink_2" class="nav-link  fst-italic" aria-current="page" href="#">{{ title }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link v-bind:to="toLink" class="nav-link active fst-italic" >{{f_option}}</router-link>
+            <router-link v-bind:to="toLink" class="nav-link  fst-italic" >{{f_option}}</router-link>
 
           </li>
           <li class="nav-item">
-            <router-link v-bind:to="toLink_3" class="nav-link active fst-italic">{{s_option}}</router-link>
+            <router-link v-bind:to="toLink_3" class="nav-link  fst-italic">{{s_option}}</router-link>
           </li>
           <li class="nav-item">
-            <router-link v-bind:to="toLink_4" class="nav-link active fst-italic">{{t_option}}</router-link>
+            <router-link v-bind:to="toLink_4" class="nav-link  fst-italic">{{t_option}}</router-link>
           </li>
         </ul>
       </div>

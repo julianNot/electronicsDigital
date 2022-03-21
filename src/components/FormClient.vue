@@ -1,29 +1,39 @@
 <template>
   <article class="card">
       <section class="d-flex">
-        <label for="i-name" class="">Nombre:</label>
-        <inputC typeInput="text" idInput="i-name" />
+        <label for="i-name" class="" >Nombre:</label>
+        <input type="text" id="i-name" class="form-control"  v-model="clientForm.name">
+
         <label for="i-lastName">Apellido:</label>
-        <inputC typeInput="text" idInput="i-lastName"/>
+        <input type="text" id="i-lastName" class="form-control" v-model="clientForm.lastName">
+
         <label for="i-id">Documento:</label>
-        <inputC typeInput="number" idInput="i-id" />
+        <input type="number" id="i-id" class="form-control" v-model="clientForm.document">
       </section>
       <section class="d-flex">
         <label for="i-phone">Numero de Telefono:</label>
-        <inputC typeInput="tel" idInput="i-phone" />
+        <input type="tel" id="i-phone" class="form-control" v-model="clientForm.numberTel">
+        
         <label for="i-city">Dirección:</label>
-        <inputC typeInput="text" idInput="i-city" />
-        <inputC typeInput="password" idInput="pass" />
+        <input type="text" id="i-city" class="form-control" v-model="clientForm.address">
       </section>
   </article>
 </template>
 
 <script>
-import inputC from '@/components/InputC.vue'
 
 export default {
-    components : {
-        inputC
+    name : 'FormClient',
+    data () {
+      return {
+        clientForm : {
+          name : '',
+          lastName : '',
+          document : 0,
+          numberTel : 0,
+          address : ''
+        }
+      }
     }
 };
 </script>
