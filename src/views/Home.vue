@@ -1,11 +1,12 @@
 <template>
   <div class="card home">
-    <img :src="img" class="img-fluid" :alt="name">
+    <img  :src="img" class="img-fluid" :alt="name">
     <div class="card-img-overlay row align-items-center">
       <div class="col-md-8 col-lg-7 my-5">
+
         <h1 class="display-2 fw_regular mb16 mt0">La <b>Facturación</b> <br>en línea más fácil</h1>
         <h4 class="mb0 fw_regular">Gestiona contratos, crea facturas recurrentes, <br>factura hojas de horas, cobra más rápido.</h4>
-        <router-link class="mt32 mb8 btn btn-primary o_btn_cta" to="/about">Empieza ahora. ¡Es gratis!</router-link>
+        <router-link to="/createinvoice"><btn-arrow name="Prueba gratis!"></btn-arrow></router-link>
         <br>
 
         <div class="o_schedule_demo ">
@@ -19,6 +20,7 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -26,9 +28,11 @@
 
 
 
+import BtnArrow from "@/components/BtnArrow";
 export default {
   name: 'Home',
   components: {
+    BtnArrow
 
   },
   data(){
@@ -45,3 +49,9 @@ export default {
 
 }
 </script>
+
+<style>
+html,body{
+  overflow-x: hidden;
+}
+</style>
