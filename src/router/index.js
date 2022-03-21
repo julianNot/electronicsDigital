@@ -8,8 +8,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/createinvoice',
+    name: 'CreateInvoices',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -19,6 +19,10 @@ const routes = [
     path: '/showinvoice',
     name: 'ShowInvoice',
     component: () => import('../views/ShowInvoice')
+  },{
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About')
   }
 
 ]

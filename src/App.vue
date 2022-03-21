@@ -1,6 +1,6 @@
 <template>
 
-  <PxHeader title="Electronics Digitals" toLink="/about" to-link_2="/" to-link_3="/showinvoice" f_option="Crear Factura" s_option="Ver Factura"></PxHeader>
+  <PxHeader title="Electronics Digitals" toLink="/createinvoice" to-link_2="/" to-link_3="/showinvoice" to-link_4="/about" f_option="Crear Factura" s_option="Ver Factura" t_option="Sobre"></PxHeader>
  <router-view/>
 </template>
 

@@ -17,6 +17,9 @@
           <li class="nav-item">
             <router-link v-bind:to="toLink_3" class="nav-link active fst-italic">{{s_option}}</router-link>
           </li>
+          <li class="nav-item">
+            <router-link v-bind:to="toLink_4" class="nav-link active fst-italic">{{t_option}}</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -35,8 +38,10 @@ export default {
     toLink: String,
     toLink_2: String,
     toLink_3: String,
+    toLink_4: String,
     s_option: String,
-    emoji:String
+    t_option: String,
+
   },
   data() {
     return {
