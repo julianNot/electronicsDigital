@@ -2,7 +2,7 @@
   <br>
   <div class="container">
     <div class="avatar">
-      <a href="https://twitter.com/Harryjhoi01">
+      <a :href="url" target="_blank">
         <img style="width: 10em;" v-bind:src="img" v-bind:alt="alt" />
       </a>
     </div>
@@ -19,6 +19,7 @@
 export default {
   name: "FloatImage",
   props:{
+    url : String,
     img : String,
     alt: String,
     author: String,
