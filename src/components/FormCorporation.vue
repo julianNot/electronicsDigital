@@ -6,20 +6,20 @@
         type="text"
         id="i-nameC"
         class="form-control"
-        v-model="corporationForm.nameCorpo"
+        v-model="nameCorpo"
       />
       <label for="i-nit">Nit:</label>
       <input
         type="text"
         id="i-nit"
         class="form-control"
-        v-model="corporationForm.nit"
+        v-model="nit"
       />
       <label for="i-city">Dirección:</label>
       <input
         type="text"
         class="form-control"
-        v-model="corporationForm.addressCorpo"
+        v-model="addressCorpo"
       />
     </section>
     <section></section>

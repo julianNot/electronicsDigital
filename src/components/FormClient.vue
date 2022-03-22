@@ -6,7 +6,7 @@
         type="text"
         id="i-name"
         class="form-control"
-        v-model="clientForm.name"
+        v-model="name"
       />
 
       <label for="i-lastName">Apellido:</label>
@@ -14,7 +14,7 @@
         type="text"
         id="i-lastName"
         class="form-control"
-        v-model="clientForm.lastName"
+        v-model="lastName"
       />
 
       <label for="i-id">Documento:</label>
@@ -22,7 +22,7 @@
         type="number"
         id="i-id"
         class="form-control"
-        v-model="clientForm.document"
+        v-model="document"
       />
     </section>
     <section class="d-flex">
@@ -31,7 +31,7 @@
         type="tel"
         id="i-phone"
         class="form-control"
-        v-model="clientForm.numberTel"
+        v-model="numberTel"
       />
 
       <label for="i-city">Dirección:</label>
@@ -39,7 +39,7 @@
         type="text"
         id="i-city"
         class="form-control"
-        v-model="clientForm.address"
+        v-model="address"
       />
     </section>
   </article>
