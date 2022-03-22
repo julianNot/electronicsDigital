@@ -1,5 +1,7 @@
 <template>
   <br>
+  <div class="card">
+    <div class="card2">
   <div class="container">
     <div class="avatar">
       <a :href="url" target="_blank">
@@ -7,17 +9,27 @@
       </a>
     </div>
     <div class="content">
-      <h1 class="fw-bold text-dark">{{ author }}</h1>
-      <p>{{ code }}</p>
-
-      <p>{{ email }}</p>
+      <share-me v-bind:name="author"></share-me>
+      <br>
+      <br>
+      <ready :phrase="code"></ready>
+      <br>
+      <br>
+      <btncool :phrase="email"></btncool>
     </div>
   </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
+import ShareMe from "@/components/ShareMe";
+import Ready from "@/components/ready";
+import Btncool from "@/components/Btncool";
 export default {
   name: "FloatImage",
+  components: {Btncool, Ready, ShareMe},
   props:{
     url : String,
     img : String,
@@ -125,5 +137,35 @@ img {
   width: 100%;
   height: auto;
 }
+}
+.card {
+  width: 380px;
+  height: 508px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: auto;
+}
+
+.card2 {
+  width: 380px;
+  height: 508px;
+  background-color: #1a1a1a;
+  border-radius:10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.card2:hover {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 </style>

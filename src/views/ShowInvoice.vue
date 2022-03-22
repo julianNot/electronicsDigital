@@ -1,5 +1,5 @@
 <template>
-<h1>Estamos Trabajando muy duro 🥵</h1>
+uwu
 </template>
 
 <script>
@@ -7,8 +7,9 @@ export default {
   name: "ShowInvoice",
   props: {
 
-  }
+  },
 }
+
 </script>
 
 <style scoped>
