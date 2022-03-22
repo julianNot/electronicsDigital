@@ -15,7 +15,7 @@ import Image from '@/components/Image';
         <input type="number" class="form-control" required v-model="price"/>
       </div>
       <div class="d-flex flex-row-reverse">
-          <button type="submit" @click.prevent="addProduct(description, amount, price)" class="me-4"><span></span></button>
+          <button type="submit" @click.prevent="addProduct(description, amount, price)" class="me-4"><span class="send"></span></button>
       </div>
     </section>
   </section>
@@ -65,7 +65,7 @@ button {
     background-color: white;
 }
 
-button span{
+button span.send{
     display: inline-block;
     height: 32px;
     width: 32px;
