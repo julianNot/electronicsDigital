@@ -19,7 +19,8 @@ const routes = [
     path: '/showinvoice',
     name: 'ShowInvoice',
     component: () => import('../views/ShowInvoice')
-  },{
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import('../views/About')

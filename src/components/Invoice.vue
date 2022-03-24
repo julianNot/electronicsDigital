@@ -1,8 +1,7 @@
+import invoce from '@/components/Invoice.vue';
+import invoice from '@/components/Invoice.vue';
 <template>
-
-  <div class="invoces-container">
-    <button @click="getDataInvoices">Consultar</button>
-    <div class="container-fluid" v-for="(invoice) in invoicesList" :key="invoice.id">
+  <div class="container-fluid">
         <div class="row" >
             <div class="col-xs-10 ">
                 <h1>Factura</h1>
@@ -14,7 +13,7 @@
         <hr>
         <div class="row">
             <div class="col-xs-10">
-                <h1 class="h6">{{invoice}}</h1>
+                <h1 class="h6">{{invoice + index}}</h1>
             </div>
             <div class="col-xs-2 text-center">
                 <strong>Fecha</strong>
@@ -85,41 +84,17 @@
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
-import axios from 'axios'
-// import invoice from '@/components/Invoice.vue'
-
 export default {
-  name: "ShowInvoice",
-  data(){
-    return {
-      invoicesList : [],
-      name : ''
+    props : {
+        listInvoices : [],
     }
-  },
-  components : {
-    // invoice
-  },
-  methods :{
-    async getDataInvoices(){
-      await axios.get('http://localhost:3000/api/v1/invoices').then(resp => {
-        let result = resp.data
-        this.invoicesList.push(result)
-        console.table(this.invoicesList[0][0]);
-        console.table(JSON.stringify(this.invoicesList[0][0].id));
-        this.name = this.invoicesList[0][0].name
-      })
-    },
-    getDatasOfList(){
-      
-    }
-  }
+
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>

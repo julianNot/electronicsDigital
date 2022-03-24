@@ -75,7 +75,6 @@
             <input type="number" class="form-control" v-model="price" />
           </div>
           <div class="d-flex flex-row-reverse">
-            <!--<button type="submit" @click.prevent="addProduct(description, amount, price)" class="me-4"><span class="send"></span></button>-->
             <button
               type=""
               @click.prevent="addProduct(description, amount, price)"
@@ -169,8 +168,9 @@ export default {
       (this.description = ""), (this.amount = 0), (this.price = 0);
     },
     async registerInvonce() {
+      let count = 3
       const invoice = {
-        id: 1,
+        id: count+1,
         client: {
           name: this.name,
           lastName: this.lastName,
