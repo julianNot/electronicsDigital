@@ -1,6 +1,6 @@
 <template>
   <br>
-  <div class="card">
+  <div class="cards">
     <div class="card2">
   <div class="container">
     <div class="avatar">
@@ -138,7 +138,7 @@ img {
   height: auto;
 }
 }
-.card {
+.cards {
   width: 380px;
   height: 508px;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
@@ -164,8 +164,9 @@ img {
   border-radius: 20px;
 }
 
-.card:hover {
+.cards:hover {
   -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
+
 </style>

@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style scoped>
-
+*{
+  display:block;
+}
 </style>
