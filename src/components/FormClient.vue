@@ -68,7 +68,8 @@ export default {
         address : this.address
       }
       return dataClient
-    }
+    },
+    
   }
 };
 </script>
