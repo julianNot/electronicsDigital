@@ -5,6 +5,7 @@ import store from './store'
 /* Importar Boostrap */
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js"
 /* Importar hoja de estilos */
 import './css/style.css'
 
