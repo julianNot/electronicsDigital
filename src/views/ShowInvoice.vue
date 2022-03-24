@@ -2,24 +2,25 @@
 
   <div class="invoces-container">
     <button @click="getDataInvoices">Consultar</button>
-    <div class="container-fluid" v-for="(invoice) in invoicesList" :key="invoice.id">
+    <div class="container-fluid" v-for="(invoice,index) in invoicesList" :key="invoice.id">
         <div class="row" >
+
             <div class="col-xs-10 ">
                 <h1>Factura</h1>
             </div>
             <div class="col-xs-2 row">
-                <img class="img img-responsive col-1" src="https://cdn-icons-png.flaticon.com/512/4213/4213636.png" alt="Logotipo" width="150">
+                <img class="img img-responsive col-1 align-content-center" src="https://cdn-icons-png.flaticon.com/512/4213/4213636.png" alt="Logotipo" width="150">
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-xs-10">
-                <h1 class="h6">{{invoice}}</h1>
+                <h1 class="">ELECTRONICS DIGITALS</h1>
             </div>
             <div class="col-xs-2 text-center">
                 <strong>Fecha</strong>
                 <br>
-                2021-05-03 <br>
+                24/3/2022<br>
                 <strong>Factura No.</strong>
                 <br>
                 1
@@ -29,11 +30,11 @@
         <div class="row text-center" style="margin-bottom: 2rem;">
             <div class="col-xs-6">
                 <h1 class="h2">Cliente</h1>
-                <strong>Luis Cabrera Benito</strong>
+                <p class="text-uppercase">{{invoice[index].client.name}}</p>
             </div>
             <div class="col-xs-6">
                 <h1 class="h2">Remitente</h1>
-                <strong>Luis Cabrera Benito</strong>
+                <strong>{{invoice[index].business.name}}</strong>
             </div>
         </div>
         <div class="row">
@@ -48,7 +49,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{tablaProductos}}
+                      {{invoice[index].products}}
+
                     </tbody>
                     <tfoot>
                         <tr>
