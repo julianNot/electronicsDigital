@@ -86,10 +86,12 @@
         </div>
     </div>
   </div>
+  <download-btn linked="invoces-container" onclick="window.print();"></download-btn>
 </template>
 
 <script>
 import axios from 'axios'
+import DownloadBtn from "@/components/downloadBtn";
 // import invoice from '@/components/Invoice.vue'
 
 export default {
@@ -101,6 +103,7 @@ export default {
     }
   },
   components : {
+    DownloadBtn
     // invoice
   },
   methods :{
