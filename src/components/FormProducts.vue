@@ -33,14 +33,7 @@ import Image from '@/components/Image';
     </section>
   </section>
   <section>
-     <!-- <ul>
-          <li v-for="product in listProducts" :key="product.id">
-              {{product.description}} |
-              {{product.amount}} |
-              {{product.price}}
-          </li>
-      </ul>-->
-    <div class="bd-example">
+    <div class="bd-example mt-3">
       <table class="table table-dark table-striped">
         <thead>
         <tr>
@@ -51,11 +44,12 @@ import Image from '@/components/Image';
         </tr>
         </thead>
         <tbody>
-        <tr v-for="product in listProducts" :key="product.id" >
-          <th scope="row">{{i}}</th>
+        <tr v-for="(product,index) in listProducts" :key="product.id" >
+          <th scope="row">{{index+1}}</th>
           <td>{{product.description}}</td>
           <td>{{product.amount}}</td>
           <td> {{product.price}}</td>
+          <!-- <td>edit, delete</td> -->
         </tr>
         </tbody>
 

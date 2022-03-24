@@ -53,5 +53,9 @@ export default {
 </script>
 
 <style scoped>
-
+nav {
+  position: sticky;
+  width: 100%;
+  z-index: 1000;
+}
 </style>
