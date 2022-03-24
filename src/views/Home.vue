@@ -14,7 +14,9 @@
     </div>
   </div>
   <hypercard img="https://www.alegra.com/static/a08eb81ee640b89c02fe508b31b86f18/36b0b/img_banner_col.webp" alt="PORTADA 2"></hypercard>
-
+  <footer>
+    © 2022 Electronics Digitals
+  </footer>
 </template>
 
 <script>
