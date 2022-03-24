@@ -6,7 +6,6 @@ code="201920260" email="harrison.diaz@uptc.edu.co"></float-image>
 <float-image img="https://i.pinimg.com/originals/43/44/08/434408f3232510def1fe3880555b8160.jpg" url="https://twitter.com/Harryjhoi01" alt="Maria Fernanda Sanchez" author="Maria Fernanda Sanchez"
              code="201521624" email="maria.sanchez02@uptc.edu.co"></float-image>
 </template>
-
 <script>
 import FloatImage from "@/components/FloatImage";
 

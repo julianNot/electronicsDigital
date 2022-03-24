@@ -3,7 +3,6 @@
     <img  :src="img" class="img-fluid" :alt="name">
     <div class="card-img-overlay img-fluid row align-items-center">
       <div class="col-md-8 col-lg-7 my-5">
-
         <h1 class="display-2 fw_regular mb16 mt0">La <b>Facturación</b> <br>en línea más fácil</h1>
         <h4 class="mb0 fw_regular">Gestiona contratos, crea facturas recurrentes, <br>factura hojas de horas, cobra más rápido.</h4>
         <router-link to="/createinvoice"><btn-arrow name="Prueba gratis!"></btn-arrow></router-link>

@@ -52,6 +52,7 @@ label {
   font-weight: 500;
 }
 
+
 input {
   max-width: 190px;
   max-height: 35px;

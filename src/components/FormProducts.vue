@@ -6,6 +6,7 @@ import Image from '@/components/Image';
         <label for="" class="text-start">Descripción</label>
         <input type="text" class="form-control" required v-model="description"/>
       </div>
+
       <div class="col">
         <label for="" class="">Cantidad</label>
         <input type="number" class="form-control" required v-model="amount"/>

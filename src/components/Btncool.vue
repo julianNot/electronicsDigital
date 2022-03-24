@@ -10,6 +10,7 @@ export default {
     phrase : String,
   }
 }
+
 </script>
 
 <style scoped>

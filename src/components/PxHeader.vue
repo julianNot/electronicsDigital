@@ -10,6 +10,7 @@
           <li class="nav-item">
             <router-link v-bind:to="toLink_2" class="nav-link  fst-italic" aria-current="page" href="#">{{ title }}</router-link>
           </li>
+
           <li class="nav-item">
             <router-link v-bind:to="toLink" class="nav-link  fst-italic" >{{f_option}}</router-link>
 

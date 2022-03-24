@@ -7,6 +7,7 @@
   </button>
 </template>
 
+
 <script>
 export default {
   name: "ShareMe",

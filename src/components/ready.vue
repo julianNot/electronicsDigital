@@ -1,6 +1,7 @@
 <template>
   <button> {{ phrase }}
   </button>
+
 </template>
 
 <script>

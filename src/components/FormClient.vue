@@ -7,6 +7,7 @@
         id="i-name"
         class="form-control"
         v-model="name"
+
       />
 
       <label for="i-lastName">Apellido:</label>

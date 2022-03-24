@@ -15,6 +15,7 @@
       <ready :phrase="code"></ready>
       <br>
       <br>
+
       <btncool :phrase="email"></btncool>
     </div>
   </div>

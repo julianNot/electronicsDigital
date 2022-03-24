@@ -7,6 +7,7 @@
         id="i-nameC"
         class="form-control"
         v-model="nameCorpo"
+
       />
       <label for="i-nit">Nit:</label>
       <input
