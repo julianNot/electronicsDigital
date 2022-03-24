@@ -1,4 +1,5 @@
 <template>
+
   <div class="card border-white home">
     <img  :src="img" class="img-fluid" :alt="name">
     <div class="card-img-overlay img-fluid row align-items-center">
@@ -22,6 +23,7 @@
 <script>
 import BtnArrow from "@/components/BtnArrow";
 import Hypercard from "@/components/hypercard";
+
 export default {
   name: 'Home',
   components: {
